@@ -8,4 +8,10 @@ use App\Models\Veiculos;
 class ControllerVeiculos extends Controller
 {
     //
+    function index(){
+        //echo "exbindo mensagem Laravel";
+        $veiculos = Veiculos::all();
+
+        return view("veiculos.listagem", compact('veiculos'));
+    }
 }
