@@ -14,4 +14,10 @@ class ControllerClientes extends Controller
 
         return view("clientes.listagem", compact('clientes'));
     }
+
+    function novo(){
+        $cliente = new Clientes();
+        
+        return view("clientes.frmCliente", compact('cliente'));
+    }
 }
