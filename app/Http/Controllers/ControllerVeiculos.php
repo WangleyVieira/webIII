@@ -14,4 +14,10 @@ class ControllerVeiculos extends Controller
 
         return view("veiculos.listagem", compact('veiculos'));
     }
+
+    function novo(){
+        $veiculo = new Veiculos();
+        
+        return view("veiculos.frmVeiculo", compact('veiculo'));
+    }
 }
